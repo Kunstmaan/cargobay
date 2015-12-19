@@ -5,17 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Cargo Bay Cookie Consent - jQuery</title>
+    <title>Cargobay Cookie Consent</title>
 
-    <meta name="description" content="Cookie consent demo">
+    <meta name="description" content="Cargobay Cookie consent demo">
 
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" type='text/css' />
-    <link rel="stylesheet" href="../styles/css/cookie-consent.css" type='text/css' />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" type='text/css' />
+    <link rel="stylesheet" href="../dist/cargobay.cookieconsent.min.css" type='text/css' />
+    <style type="text/css">
+        .cookie-bar {
+            position: fixed;
+            bottom: 1rem;
+            left: 1rem;
+
+            padding: 1em;
+            width: 300px;
+
+            background: #CCC;
+        }
+
+        .cookie-bar .btn {
+            float: right;
+            margin: 2rem 0 0 2rem;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Cargo Bay Cookie Consent - jQuery</h1>
+            <h1 class="page-header">Cargobay - Cookie Consent</h1>
         </header>
 
         <main role="main">
@@ -26,52 +43,17 @@
 
     <div id="cookie-bar" class="cookie-bar">
         <p>
-            Deze site gebruikt cookies om uw surfervaring op deze website gemakkelijker te maken.
-            Indien u meer informatie wenst kan u <a class="cookie-bar__policy" href="#">hier ons cookiebeleid lezen</a>.
-            <button type="button" id="cookie-bar__consent-btn" class="btn btn-warning cookie-bar__btn">Doorgaan</button>
+            This site uses cookies to make your surfing experience on this website easier. If you agree with this, please click on &lsquo;Continue&rsquo;.
+            <a href="#">Read our cookie policy here</a> for more information.
+            <button type="button" id="cookie-bar__consent-btn" class="btn btn-warning">Continue</button>
         </p>
     </div>
 
-    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="../js/jquery.cookie-consent.js"></script>
+    <script src="../dist/cargobay.cookieconsent.min.js"></script>
     <script>
-        $(function() {
-            cargobay.cookieConsent.init();
+        document.addEventListener("DOMContentLoaded", function(event) {
+            cargobay.cookieConsent();
         });
     </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
