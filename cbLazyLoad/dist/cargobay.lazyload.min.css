@@ -1,0 +1,29 @@
+/* ==========================================================================
+   Toggle
+   ========================================================================== */
+/* Effects
+   ========================================================================== */
+.lazy-load__fade {
+  -webkit-transition: opacity 500ms ease-in-out;
+  transition: opacity 500ms ease-in-out;
+  max-width: 100%;
+  opacity: 0; }
+
+.lazy-load__fade--loaded {
+  opacity: 1; }
+
+.lazy-load__color {
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: 500ms ease-in-out;
+  -moz-filter: grayscale(100%);
+  -moz-transition: 500ms ease-in-out;
+  -o-filter: grayscale(100%);
+  -o-transition: 500ms ease-in-out; }
+
+.lazy-load__color--loaded {
+  -webkit-filter: grayscale(0%);
+  -webkit-transition: 500ms ease-in-out;
+  -moz-filter: grayscale(0%);
+  -moz-transition: 500ms ease-in-out;
+  -o-filter: grayscale(0%);
+  -o-transition: 500ms ease-in-out; }

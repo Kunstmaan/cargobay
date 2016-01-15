@@ -20,21 +20,11 @@ Cargobay is a utility library with some useful and commonly used components and 
 bower install cargobay
 ```
 
-
 ## Contribution
 
-#### Git Flow
-Cargo Bay works with [git-flow](https://github.com/nvie/gitflow).
+#### Git
+For a contribution to Cargobay, take a look at the CONTRIBUTING.md file.
 
-For a contribution to Cargobay, you need to follow the [following workflow](https://github.com/nvie/gitflow#initialization) with the addition of a pull-request.
-
-Example for adding a feature:
-- Start from develop (make sure to pull first)
-- `git flow feature start -your feature name-`
-- `git flow feature publish -your feature name-`
-- start making your changes (commit and push regularly)
-- when done, make a pull-request from your feature branch to develop
-- after the pull-request is accepted, do `git flow feature finish -your feature name-`
 
 ## Demo
 Examples of this components can be found on [gh-pages](http://kunstmaan.github.com/cargobay)

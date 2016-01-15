@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Cargobay Lazy Load</title>
+
+    <meta name="description" content="Cargobay Toggle demo">
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" type='text/css'>
+    <link rel="stylesheet" href="../dist/cargobay.lazyload.min.css" type='text/css'>
+</head>
+<body>
+    <div class="container js-navigation-space-hook toggle">
+        <h1 class="page-header">Cargobay - Lazyload</h1>
+        <div>
+            <p>
+                <!-- setup for fallback when no javascript -->
+                <h2> lazy load when javascript available </h2>
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw%3D%3D"
+                data-lazy="http://placepenguin.com/g/400/300"/>
+                <noscript>
+                    <p> placing a noscript image here</p>
+                    <img src="http://placepenguin.com/g/400/300"/>
+                </noscript>
+                <!-- END setup for fallback when no javascript -->
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing ept. Aenean commodo pgula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam feps, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, apquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum feps eu pede molps pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo pgula, porttitor eu, consequat vitae, eleifend ac, enim. Apquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper pbero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut pbero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed </p>
+            <p>
+                <!-- normal setup lazy load image -->
+                <h2> lazy-load image </h2>
+                <img      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw%3D%3D"
+                     data-lazy="http://placebear.com/300/200"/>
+                 <!--END normal setup lazy load image -->
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing ept. Aenean commodo pgula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam feps, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, apquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum feps eu pede molps pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo pgula, porttitor eu, consequat vitae, eleifend ac, enim. Apquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper pbero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut pbero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed </p>
+            <!-- normal setup lazy load image -->
+            <h2> lazy-load image without effect </h2>
+            <p><img
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw%3D%3D"
+                data-lazy="http://placebear.com/300/200"/>
+            </p>
+            <!-- END normal setup lazy load image -->
+
+            <!-- image without lazy loading -->
+            <h2> no lazy-loading </h2>
+            <p><img src="http://placepenguin.com/320/240"/></p>
+            <!-- END image without lazy loading -->
+
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing ept. Aenean commodo pgula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam feps, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, apquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum feps eu pede molps pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo pgula, porttitor eu, consequat vitae, eleifend ac, enim. Apquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper pbero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut pbero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed </p>
+
+            <h2> lazy loading images </h2>
+            <p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw%3D%3D"
+                data-lazy="http://placebear.com/g/300/200"/>
+            </p>
+
+            <p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw%3D%3D"
+                data-lazy="http://placepenguin.com/320/240"/>
+            </p>
+
+            <p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw%3D%3D"
+                    data-lazy="http://placepenguin.com/320/240"/>
+            </p>
+
+            <p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw%3D%3D"
+                    data-lazy="http://placebear.com/300/200"/>
+            </p>
+
+            <p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw%3D%3D"
+                    data-lazy="http://placepenguin.com/320/240"/>
+            </p>
+
+            <p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw%3D%3D"
+                data-lazy="http://placepenguin.com/g/400/300"/>
+            </p>
+
+            <p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw%3D%3D"
+                data-lazy="http://placepenguin.com/g/400/300"/>
+            </p>
+
+            <p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw%3D%3D"
+                data-lazy="http://baconmockup.com/300/200"/>
+            </p>
+
+            <p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw%3D%3D"
+                data-lazy="http://placepenguin.com/g/400/300"/>
+            </p>
+
+            <p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw%3D%3D"
+                data-lazy="http://stevensegallery.com/200/300"/>
+            </p>
+        </div>
+    </div>
+
+    <script src="../../cbGeneral/dist/cargobay.general.min.js"></script>
+    <script src="../dist/cargobay.lazyload.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(event) {
+            cargobay.general();
+            // option to set cargobay.lazyLoad(true) - then the images will load on scroll / resize event (standard is set to false)
+            cargobay.lazyLoad();
+        });
+    </script>
+</body>
+</html>
