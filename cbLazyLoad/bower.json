@@ -1,0 +1,26 @@
+{
+    "name": "cargobay-lazyload",
+    "version": "1.0.0",
+    "homepage": "https://labs.kunstmaan.be/cargobay",
+    "authors": [
+        "Kunstmaan team <labs@kunstmaan.be>"
+    ],
+    "description": "Lazyload",
+    "main": [
+        "js/cargobay.lazyload.js",
+        "scss/cargobay.lazyload.scss"
+    ],
+    "moduleType": [
+        "globals"
+    ],
+    "keywords": [
+        "cargobay",
+        "lazyload"
+    ],
+    "license": "MIT",
+    "ignore": [],
+    "dependencies": {
+        "cargobay-general": ">= 0.1.0"
+    }
+}
+
