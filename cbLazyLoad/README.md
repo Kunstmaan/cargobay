@@ -25,22 +25,19 @@ When you want to have a non-javascript fallback, you can put **noscript** tags a
 
 To make the images viewable when there is no javascript enabled, it's important to also use a **noscript** tag with the image and src defined. This will then only show when there is no javascript available.
 
-It is possible to put an effect on the loading of the images. In this component are two examples, you can add as you want. You need to specify the effect in the **data-effect** attribute.
- 
-- lazy-load__fade
-- lazy-load__color
+While initializing the cargobay.lazyload(); you can choose to set the option **scroll** on. Then the script will check if your image is in the viewport and only load it on scroll and resize when it appears in the viewport. 
+You can do so by setting `cargobay.lazyload(true);` 
+The default is set to *false*
 
 #### lazy load normal setup
 ```html
-<img    data-effect="lazy-load__fade"
-        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw%3D%3D"
+<img    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw%3D%3D"
         data-lazy="http://placepenguin.com/g/400/300"/>                
 ```
 
 #### lazy load fallback - no javascript
 ```html
-<img    data-effect="lazy-load__fade"
-        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw%3D%3D"
+<img    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw%3D%3D"
         data-lazy="http://placepenguin.com/g/400/300"/>
 <noscript>
     <img src="http://placepenguin.com/g/400/300"/>
